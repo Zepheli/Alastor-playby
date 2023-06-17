@@ -33,7 +33,7 @@ A phenomenon which has been on the rise ever since Meranthe suffered from the ev
 
 </center>
 <div style="position:fixed;top:0;right:0;margin:0;padding:0; z-index:9999;">
-<audio controls autoplay src="Egzod & Maestro Chives - Royalty [Official Instrumental].mp3" type=audio/mpeg>
+<audio id="myVideo" controls autoplay src="Egzod & Maestro Chives - Royalty [Official Instrumental].mp3" type=audio/mpeg>
 </audio>
 </div>
 
@@ -100,7 +100,8 @@ text-align: left;
 </style>
 
 <script>
-
+var x = document.getElementById("myVideo");
+x.volume = 0.2;
 $(document).ready(function(){
 
 $('#pic').hide();
